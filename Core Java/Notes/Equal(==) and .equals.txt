@@ -1,0 +1,5 @@
+What is the Difference Between (==)Equal and (.equals)Equals Method?
+=>	(==)Equal is design to compair state of variable of primitive type.
+	(.equals) methos is design to compaire state of instances of non-primitive Type.
+
+	We can use == operater with the non primitive type variable but we can not use .equals method with the primitive type variable.

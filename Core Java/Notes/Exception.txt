@@ -1,0 +1,1 @@
+Exception is an instancewhich is use send notification of the end user of the system if any excetional sitiuation occuersin the progarm.
