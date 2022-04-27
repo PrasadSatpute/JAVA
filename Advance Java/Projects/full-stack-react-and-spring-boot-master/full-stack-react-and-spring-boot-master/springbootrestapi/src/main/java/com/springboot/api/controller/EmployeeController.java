@@ -37,34 +37,33 @@ public class EmployeeController {
 		return new ResponseEntity<Employee>(emplyeeService.saveEmployee(employee),HttpStatus.CREATED);
 	}
 	
-//	@Autowired
-//	private EmployeeRepository eRepo;
-//	
-//	
-//	
-	@GetMapping("allemployees")
+	@Autowired
+	private EmployeeRepository eRepo;
+	
+	
+	@GetMapping("/allemployees")
 	public List<Employee> getAllEmployees() {
-		return emplyeeService.getAllEmplyees();
+		return eRepo.findAll();
 	}
-//	
-//	@GetMapping("/employees/{id}")
-//	public Employee getEmployeeById(@PathVariable Long id) {
-//		return eRepo.findById(id).get();
-//	}
-//	
-//	@PostMapping("/addemployee")
-//	public Employee saveEmployeeDetails(@RequestBody Employee employee) {
-//		return eRepo.save(employee);
-//	}
-//	
-//	@PutMapping("/employees")
-//	public Employee updateEmployee(@RequestBody Employee employee) {
-//		return eRepo.save(employee);
-//	}
-//	
-//	@DeleteMapping("/employees/{id}")
-//	public ResponseEntity<HttpStatus> deleteEmployeeById(@PathVariable Long id) {
-//		eRepo.deleteById(id);
-//		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-//	}
+	
+	@GetMapping("/employees/{id}")
+	public Employee getEmployeeById(@PathVariable Long id) {
+		return eRepo.findById(id).get();
+	}
+	
+	@PostMapping("/addemployee")
+	public Employee saveEmployeeDetails(@RequestBody Employee employee) {
+		return eRepo.save(employee);
+	}
+	
+	@PutMapping("/employees")
+	public Employee updateEmployee(@RequestBody Employee employee) {
+		return eRepo.save(employee);
+	}
+	
+	@DeleteMapping("/employees/{id}")
+	public ResponseEntity<HttpStatus> deleteEmployeeById(@PathVariable Long id) {
+		eRepo.deleteById(id);
+		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+	}
 }
