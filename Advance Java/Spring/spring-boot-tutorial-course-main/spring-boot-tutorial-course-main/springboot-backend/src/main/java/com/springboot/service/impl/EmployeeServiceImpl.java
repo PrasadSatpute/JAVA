@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.springboot.exception.ResourceNotFoundException;
@@ -14,12 +15,14 @@ import com.springboot.service.EmployeeService;
 @Service
 public class EmployeeServiceImpl implements EmployeeService{
 
+	//Constructor Base Repository
+	@Autowired
 	private EmployeeRepository employeeRepository;
 	
-	public EmployeeServiceImpl(EmployeeRepository employeeRepository) {
-		super();
-		this.employeeRepository = employeeRepository;
-	}
+//	public EmployeeServiceImpl(EmployeeRepository employeeRepository) {
+//		super();
+//		this.employeeRepository = employeeRepository;
+//	}
 
 	@Override
 	public Employee saveEmployee(Employee employee) {
