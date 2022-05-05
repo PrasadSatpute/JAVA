@@ -25,17 +25,45 @@ import com.springboot.api.service.EmployeeService;
 @RequestMapping("/api/employees")
 public class EmployeeController {
 	
-	@Autowired
 	private EmployeeService emplyeeService;
 	
+	public EmployeeController(EmployeeService emplyeeService) {
+		super();
+		this.emplyeeService = emplyeeService;
+	}
+	
 	@PostMapping("addemployees")
-	public Employee saveEmployee(@RequestBody Employee employee){
-		return emplyeeService.saveEmployee(employee);
+	public ResponseEntity<Employee> saveEmployee(@RequestBody Employee employee){
+		return new ResponseEntity<Employee>(emplyeeService.saveEmployee(employee),HttpStatus.CREATED);
 	}
 	
-	@GetMapping("{id}")
-	public Employee getEmployeeById(@PathVariable("id") long employeeId){
-		return emplyeeService.getEmployeeById(employeeId);
+	@Autowired
+	private EmployeeRepository eRepo;
+	
+	
+	@GetMapping("/allemployees")
+	public List<Employee> getAllEmployees() {
+		return eRepo.findAll();
 	}
 	
+	@GetMapping("/employees/{id}")
+	public Employee getEmployeeById(@PathVariable Long id) {
+		return eRepo.findById(id).get();
+	}
+	
+	@PostMapping("/addemployee")
+	public Employee saveEmployeeDetails(@RequestBody Employee employee) {
+		return eRepo.save(employee);
+	}
+	
+	@PutMapping("/employees")
+	public Employee updateEmployee(@RequestBody Employee employee) {
+		return eRepo.save(employee);
+	}
+	
+	@DeleteMapping("/employees/{id}")
+	public ResponseEntity<HttpStatus> deleteEmployeeById(@PathVariable Long id) {
+		eRepo.deleteById(id);
+		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+	}
 }
