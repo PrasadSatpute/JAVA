@@ -12,7 +12,7 @@ public class ArrayFirst {
             break;
             }
         }
-        System.out.println("First Occurence is = "+index);
+        System.out.println("First Occurence Index is = "+index);
     }
     
     public static void main(String[] args) {
