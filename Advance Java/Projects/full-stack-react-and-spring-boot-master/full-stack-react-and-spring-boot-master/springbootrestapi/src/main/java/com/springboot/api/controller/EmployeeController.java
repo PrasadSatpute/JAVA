@@ -20,13 +20,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.springboot.api.entity.Employee;
 import com.springboot.api.repository.EmployeeRepository;
 import com.springboot.api.service.EmployeeService;
+import com.springboot.api.service.impl.EmployeeServiceImpl;
 
 @RestController
 @RequestMapping("/api/employees")
 public class EmployeeController {
 	
 	@Autowired
-	private EmployeeService emplyeeService;
+	private EmployeeService emplyeeService = new EmployeeServiceImpl();
 	
 	@PostMapping("addemployees")
 	public Employee saveEmployee(@RequestBody Employee employee){
