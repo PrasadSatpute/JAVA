@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 public class Example1 {
     public static void main(String[] args) {
-        int arr [] = {1,4,2,6,8,8,4,6,3,5,9,9,6,7,5,3,7,8,5,9,9};
+        int arr [] = {1,2,6,7,3,4,3,5,5,8,4};
        
         HashMap<Integer,Integer> map = new HashMap<>();
         
