@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Example;
 
-/**
- *
- * @author AVENGER'S
- */
 public class MissingNumberProblem {
-    
+    public static void main(String[] args) {
+
+       int[] array={4,3,8,7,5,2,6};
+       int missingNumber = findMissingNum(array);
+       System.out.println("Missing Number is "+ missingNumber); 
+   }
+
+   public static int findMissingNum(int[] array) {
+       int n=array.length+1;
+       int sumOfFirstNNums=n*(n+1)/2;
+       int actualSumOfArr=0;
+       for (int i = 0; i < array.length; i++) {
+           actualSumOfArr+=array[i];
+       }
+       return sumOfFirstNNums-actualSumOfArr;
+   }
 }

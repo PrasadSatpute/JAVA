@@ -2,37 +2,12 @@ package com.Solution.Hackerrank;
 
 import java.util.Arrays;
 
-class Student{  
-int rollno;  
-String name;  
-float fee;  
-
-    public Student() {
-        this(113,"ankita",6000f);
-        System.out.println("CALL CUNSTRUCTOR");
-    }
-
-Student(int rollno,String name,float fee){  
-    //this(); //Calling default constructor from parameterized constructor:
-this.rollno=rollno;  
-this.name=name;  
-this.fee=fee;  
-}  
-void display(){System.out.println(rollno+" "+name+" "+fee);}  
-}  
 
 public class StringAnagram {
     
      public static void main (String [] args) {  
         String str1="Brag";  
         String str2="Grab";  
-        
-        Student s1=new Student(111,"ankit",5000f);  
-Student s2=new Student(112,"sumit",6000f);  
-s1.display();  
-s2.display(); 
-        
-  
         
         //Converting both the string to lower case.  
         str1 = str1.toLowerCase();  
