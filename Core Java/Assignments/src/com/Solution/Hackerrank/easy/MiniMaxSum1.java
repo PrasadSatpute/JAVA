@@ -4,36 +4,30 @@ package com.Solution.Hackerrank.easy;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class MiniMaxSum {
+public class MiniMaxSum1 {
     public static void miniMaxSum(List<Integer> arr) {
-        int min = 0;
-        int max = 0;
         
-        List<Integer> tempArr1 = arr;
-        List<Integer> tempArr2 = arr;
+        List<Long> newList = new ArrayList<>();
         
-        List<Integer> sortedList1 = tempArr1.stream().sorted().collect(Collectors.toList());
-        List<Integer> sortedList2 = tempArr2.stream()
-			.sorted(Comparator.reverseOrder())
-			.collect(Collectors.toList());
-        
-        for (Integer integer : sortedList1) {
-            if(Collections.max(arr) != integer){
-                min = min + integer;
+        for (int i = 0; i < arr.size(); i++) {
+            long add = 0;
+            for (int j = 0; j < arr.size(); j++) {
+                if(i != j){
+                    add = add + arr.get(j);
+                }
+                
             }
+                newList.add(add);
         }
-        
-        for (Integer integer : sortedList2) {
-            if(Collections.min(arr) != integer){
-                min = min + integer;
-            }
-        }
+        long min = Collections.min(newList);
+        long max = Collections.max(newList);
         
         System.out.println(min + " " + max);
     }
