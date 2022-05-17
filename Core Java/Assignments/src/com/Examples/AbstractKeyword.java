@@ -34,5 +34,6 @@ public class AbstractKeyword {
         b.writeSomthing(p);
         Pencil p1 = new Pencil();
         b.writeSomthing(p1);
+//        Writer e = new Writer();//Not Ok
     }
 }
