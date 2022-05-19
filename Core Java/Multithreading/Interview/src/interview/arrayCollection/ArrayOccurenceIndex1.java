@@ -1,5 +1,5 @@
 
-package interview;
+package interview.arrayCollection;
 
 import java.util.Collections;
 import java.util.HashMap;

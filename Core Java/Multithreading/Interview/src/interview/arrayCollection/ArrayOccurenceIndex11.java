@@ -1,5 +1,5 @@
 
-package interview;
+package interview.arrayCollection;
 
 public class ArrayOccurenceIndex11 {
     public static void main(String[] args) {
