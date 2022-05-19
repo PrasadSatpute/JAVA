@@ -1,9 +1,9 @@
 
-package com.multithread.sample;
+package com.multithreading;
 
 import java.util.*;
 
-class MyThread1 implements Runnable
+class MyThread4 implements Runnable
 {
     @Override
     public void run()
@@ -11,7 +11,7 @@ class MyThread1 implements Runnable
         for (int i = 0; i < 10; i++) {
 			System.out.println("Value of i is "+i);
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(500);
 			} catch (Exception e) {
 				// TODO: handle exception
 			}
@@ -20,13 +20,13 @@ class MyThread1 implements Runnable
 }
 
 
-public class Multithread2 {
+public class Multithread4 {
 
     public static void main(String[] args) {
-        MyThread1 mt = new MyThread1();
+        MyThread4 mt = new MyThread4();
         Thread t = new Thread(mt);
-        t.run();
-        MyThread1 mt2 = new MyThread1();
+        t.start();
+        MyThread4 mt2 = new MyThread4();
         Thread t1 = new Thread(mt2);
         t1.start();
 

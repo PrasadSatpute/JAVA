@@ -1,9 +1,9 @@
 
-package com.multithread.sample;
+package com.multithreading;
 
 import java.util.Iterator;
 
-class MyThread implements Runnable
+class MyThread3 implements Runnable
 {
     @Override
     public void run()
@@ -15,10 +15,10 @@ class MyThread implements Runnable
 }
 
 
-public class Multithread {
+public class Multithread3 {
 
     public static void main(String[] args) {
-        MyThread mt = new MyThread();
+        MyThread3 mt = new MyThread3();
         Thread t = new Thread(mt);
         t.start();
     }

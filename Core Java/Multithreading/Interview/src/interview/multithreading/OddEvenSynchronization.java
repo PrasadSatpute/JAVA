@@ -37,7 +37,7 @@ class TaskEvenOdd implements Runnable{
 }
 
 public class OddEvenSynchronization {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
        
         TaskEvenOdd even = new TaskEvenOdd(0);
         TaskEvenOdd odd = new TaskEvenOdd(1);

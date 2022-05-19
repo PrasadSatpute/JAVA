@@ -1,14 +1,14 @@
 
-package com.multithread.sample;
+package com.multithreading;
 
 
-class MyThread implements Runnable
+class MyThread extends Thread
 {
     @Override
     public void run()
     {
         System.out.println("First Thread Start");
-        System.out.println("Runnable Interface Implimented");
+        System.out.println("Thread Class Extended");
     }
 }
 
@@ -17,8 +17,7 @@ public class Multithread1 {
 
     public static void main(String[] args) {
         MyThread mt = new MyThread();
-        Thread t = new Thread(mt);
-        t.start();
+        mt.start();
     }
     
 }
