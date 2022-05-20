@@ -12,8 +12,8 @@ class PrintEvenOdd
         this.totalNumbersInSequence = totalNumbersInSequence;
     }
     
-    public void printNumbers(int result) {
-		synchronized (this) {
+    public synchronized void printNumbers(int result) {
+//		synchronized (this) {
 			while (number < totalNumbersInSequence) {
 				while (number % 2 != result) {
 					try {
@@ -26,7 +26,7 @@ class PrintEvenOdd
 				System.out.println(Thread.currentThread().getName()+"   "+number++);
 				notifyAll();
 			}
-		}
+//		}
 	}
     
 }
