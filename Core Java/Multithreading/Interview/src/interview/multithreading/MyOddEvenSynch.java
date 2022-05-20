@@ -24,7 +24,8 @@ class PrintEvenOdd
 				}
 				
 				System.out.println(Thread.currentThread().getName()+"   "+number++);
-				notifyAll();
+                                notify();
+//				notifyAll();
 			}
 //		}
 	}
