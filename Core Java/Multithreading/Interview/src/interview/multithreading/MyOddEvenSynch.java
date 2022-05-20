@@ -54,8 +54,8 @@ public class MyOddEvenSynch {
         int TOTAL_NUMBER_IN_SEQUENCE = 20;
         PrintEvenOdd evenoddSource = new PrintEvenOdd(TOTAL_NUMBER_IN_SEQUENCE);
         
-        ThreadEvenOdd even = new ThreadEvenOdd(evenoddSource, 1);
-        ThreadEvenOdd odd = new ThreadEvenOdd(evenoddSource, 0);
+        ThreadEvenOdd odd = new ThreadEvenOdd(evenoddSource, 1);
+        ThreadEvenOdd even = new ThreadEvenOdd(evenoddSource, 0);
         
         Thread t1 = new Thread(odd, "Thread-1   Odd");
 	Thread t2 = new Thread(even, "Thread-2  Even");
