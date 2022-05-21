@@ -15,7 +15,7 @@ class PrintEvenOdd
     public synchronized void printNumbers(int result) {
 //		synchronized (this) {
 			while (number < totalNumbersInSequence) {
-				while (number % 2 != result) {
+				if (number % 2 != result) {
 					try {
 						wait();
 					} catch (InterruptedException e) {
