@@ -7,7 +7,7 @@ public class LoopTaskA implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("#### <TASK-" + id + "> STARTING ####");
+        System.out.println("#### <TASK-" + id + ">"+Thread.currentThread().getName()+" STARTING ####");
 
         for (int i = 10; i > 0; i--) {
             System.out.println("Tik Tit - " + i);
