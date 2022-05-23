@@ -3,7 +3,7 @@ package com.multithreading.Executors;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class Test7UsingCachedThreadPool1 {
+public class Test7UsingCachedThreadPool {
 
     public static void main(String[] args) {
         System.out.println("Main Thread Start Here ...");
