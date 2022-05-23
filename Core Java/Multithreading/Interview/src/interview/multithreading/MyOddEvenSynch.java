@@ -13,7 +13,7 @@ class PrintEvenOdd
     }
     
     public synchronized void printNumbers(int result) {
-//		synchronized (this) {
+
 			while (number < totalNumbersInSequence) {
 				if (number % 2 != result) {
 					try {
@@ -27,7 +27,7 @@ class PrintEvenOdd
                                 notify();
 //				notifyAll();
 			}
-//		}
+
 	}
     
 }
