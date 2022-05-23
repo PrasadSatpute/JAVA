@@ -21,7 +21,7 @@ public class ThreadDemo3Lambda {
         Thread t1 = new Thread(thread1);
         t1.start();
         
-        
+        //Second Thread
         Runnable thread2 = () -> {
               try {
                 for (int i = 0; i < 10; i++) {
@@ -33,7 +33,20 @@ public class ThreadDemo3Lambda {
                 }
             };
         
+        
+        //Third Thread
         Thread t2 = new Thread(thread2);
         t2.start();
+        
+        new Thread(() -> { // Lambda Expression
+         for(int i=1; i <= 5; i++) {
+            System.out.println("Lambda Thread: "+ i);
+            try {
+               Thread.sleep(500);
+            } catch(Exception e) {
+               e.printStackTrace();
+            }
+         }
+      }).start();
     }
 }
