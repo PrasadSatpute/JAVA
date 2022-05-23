@@ -14,4 +14,8 @@ public class Lion implements Animal{
 		return "Lion Roar";
 	}
 	
+	public String animalName() {
+		return "Lion King";
+	}
+	
 }

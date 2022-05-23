@@ -7,7 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.service.Animal;
+import com.example.demo.service.Cat;
 import com.example.demo.service.Dog;
+import com.example.demo.service1.Lion;
 
 @RestController
 @RequestMapping("/autowire")
@@ -20,10 +22,17 @@ public class AutowiredController {
 //	@Autowired
 //	private Animal animal;
 	
-	@Autowired
-	private Animal dog;
+//	@Autowired
+//	private Animal dog;
+	
+//	private Animal animal;
+//	@Autowired
+//	public AutowiredController(@Qualifier("dog") Animal animal) {
+//		this.animal = animal;
+//	}
 	
 //	private Animal animal = new Dog();
+//	private Animal animal = new Cat();
 	
 //	private Animal animal;
 //	
@@ -36,6 +45,14 @@ public class AutowiredController {
 	public String fetchAnimal() {
 		return animal.charAnimal();
 	}
+	
+//	@Autowired
+//	private Lion animal;
+//	
+//	@GetMapping("/animal")
+//	public String fetchAnimal() {
+//		return animal.animalName();
+//	}
 	
 //	@GetMapping("/animal")
 //	public String fetchDog() {
