@@ -51,14 +51,8 @@ public class SequenceNumberThread {
 	public static void main(String[] args) {
 		
 		NumbersGenerator numbersGenerator = new NumbersGenerator(TOTAL_NUMBER_IN_SEQUENCE);
-		SequenceGeneratorTask odd = new SequenceGeneratorTask(numbersGenerator, 1);
-                SequenceGeneratorTask Even = new SequenceGeneratorTask(numbersGenerator, 0);
-		//Created three Threads
-		Thread t1 = new Thread(odd, "Thread-1   Odd");
-		Thread t2 = new Thread(Even, "Thread-2  Even");
-		
-		
-		//Start all three threads
+		Thread t1 = new Thread(new SequenceGeneratorTask(numbersGenerator, 1), "Thread-1");
+		Thread t2 = new Thread(new SequenceGeneratorTask(numbersGenerator, 0), "Thread-2");
 		t1.start();
 		t2.start();
 		
