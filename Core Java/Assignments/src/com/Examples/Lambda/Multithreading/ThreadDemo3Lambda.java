@@ -4,7 +4,7 @@ package com.Examples.Lambda.Multithreading;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class FirstThreadDemo {
+public class ThreadDemo3Lambda {
     public static void main(String[] args) {
         //FirstThread
         
