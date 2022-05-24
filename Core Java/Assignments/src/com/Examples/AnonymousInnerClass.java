@@ -29,9 +29,12 @@ class Other{
 }
 
 public class AnonymousInnerClass {
+
     public static void main(String[] args) {
-        Other o = new Other(){
-            
+        Other o = new Other() {
+            void call1() {
+                System.out.println("Anonymous class Call");
+            }
         };
         o.call();
         o.call1();
@@ -39,6 +42,7 @@ public class AnonymousInnerClass {
 }
 
 //-----------------------------------------------------------------------
+//Anonymous classes usually extend subclasses or implement interfaces.
 
 //interface Other{
 //    void call();
