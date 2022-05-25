@@ -19,27 +19,49 @@ package com.Examples;
 
 //-----------------------------------------------------------------------
 
-class Other{
-    void call(){
-        System.out.println("Other class Call");
-    }
-    void call1(){
-        System.out.println("Other class Call");
-    }
-}
+//class Other{
+//    void call(){
+//        System.out.println("Other class Call");
+//    }
+//    void call1(){
+//        System.out.println("Other class Call");
+//    }
+//}
+//
+//public class AnonymousInnerClass {
+//
+//    public static void main(String[] args) {
+//        Other o = new Other() {
+//            void call1() {
+//                System.out.println("Anonymous class Call");
+//            }
+//        };
+//        o.call();
+//        o.call1();
+//    }
+//}
 
-public class AnonymousInnerClass {
+//-----------------------------------------------------------------------
 
-    public static void main(String[] args) {
-        Other o = new Other() {
-            void call1() {
-                System.out.println("Anonymous class Call");
-            }
-        };
-        o.call();
-        o.call1();
-    }
-}
+//class Other{
+//    void call(){
+//        System.out.println("Other class Call");
+//    }
+//    void call1(){
+//        System.out.println("Other class Call");
+//    }
+//}
+//
+//public class AnonymousInnerClass {
+//
+//    public static void main(String[] args) {
+//        new Other() {
+//            void call1() {
+//                System.out.println("Anonymous class Call");
+//            }
+//        }.call1();
+//    }
+//}
 
 //-----------------------------------------------------------------------
 //Anonymous classes usually extend subclasses or implement interfaces.
@@ -69,22 +91,62 @@ public class AnonymousInnerClass {
 //
 //public class AnonymousInnerClass {
 //    public static void main(String[] args) {
-//        Other o = new Other(){
+//        new Other(){
 //            @Override
 //            public void call() {
-//                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//                System.out.println("Anonymous Call");
 //            }
 //
 //            @Override
 //            public void add(int a, int b) {
-//                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//                System.out.println(a+" + "+b+" = "+ (a+b));
 //            }
 //
 //            @Override
 //            public int sub(int x, int y) {
-//                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//                return x-y;
 //            }
 //            
-//        };
+//        }.call();
 //    }
 //}
+
+//-----------------------------------------------------------------------
+
+//interface Other{
+//    int sub(int x, int y);
+//}
+//
+//public class AnonymousInnerClass {
+//    public static void main(String[] args) {
+//        System.out.println(new Other(){
+//            @Override
+//            public int sub(int x, int y) {
+//                return x-y;
+//            }
+//            
+//        }.sub(20, 10));
+//    }
+//}
+
+//-----------------------------------------------------------------------
+
+
+public class AnonymousInnerClass {
+    public static void main(String[] args) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Anonymous Class with Thread");
+            }
+        }).start();
+        
+        new Thread() {
+         public void run() {
+            for (int i=1; i <= 5; i++) {
+               System.out.println("Anonymous class method: " + i);
+            }
+         }
+      }.start();
+    }
+}
