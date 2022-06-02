@@ -2,15 +2,18 @@ package com.multithreading.Executors;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class Test9UsingScheduledThreadPool1 {
 
+
     public static void main(String[] args) {
         System.out.println("Main Thread Start Here ...");
-        ExecutorService executorService = Executors.newScheduledThreadPool(2);
-
+        ScheduledExecutorService executorService = Executors.newScheduledThreadPool(2);
+        
         for (int i = 0; i < 6; i++) {
-            executorService.execute(new LoopTaskA());
+            executorService.schedule(new LoopTaskA(), 5, TimeUnit.SECONDS);
         }
         executorService.shutdown();
 

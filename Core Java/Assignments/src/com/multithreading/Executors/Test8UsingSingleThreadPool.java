@@ -12,6 +12,8 @@ public class Test8UsingSingleThreadPool {
         for (int i = 0; i < 3; i++) {
             executorService.execute(new LoopTaskA());
         }
+        
+      //It waits till all the submitted tasks execution gets finished.
         executorService.shutdown();
 
         System.out.println("Main Thread Ends Here ...");

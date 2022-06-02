@@ -10,7 +10,7 @@ public class LoopTaskA implements Runnable {
         System.out.println("#### <TASK-" + id + ">"+Thread.currentThread().getName()+" STARTING ####");
 
         for (int i = 10; i > 0; i--) {
-            System.out.println("Tik Tit - " + i);
+            System.out.println("A Tik Tit - " + i +" "+Thread.currentThread().getName());
             try {
                 Thread.sleep(500);
             } catch (Exception e) {

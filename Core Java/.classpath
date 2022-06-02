@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Assignments/src"/>
+	<classpathentry kind="src" path="DaoPattern/src"/>
+	<classpathentry kind="src" path="HackerRank/Java Datatypes"/>
+	<classpathentry kind="src" path="HackerRank/Java EOF"/>
+	<classpathentry kind="src" path="HackerRank/Java Int to String"/>
+	<classpathentry kind="src" path="HackerRank/Java Loops II"/>
+	<classpathentry kind="src" path="HackerRank/Java Static Initializer Block"/>
+	<classpathentry kind="src" path="LinkedList/LinkedList/src"/>
+	<classpathentry kind="src" path="Multithreading/Interview/src"/>
+	<classpathentry kind="src" path="Multithreading/Multithread3/src"/>
+	<classpathentry kind="src" path="Multithreading/Synchronization/src"/>
+	<classpathentry kind="output" path="Assignments/build/classes"/>
+</classpath>

@@ -1,5 +1,5 @@
 
-package com.Examples.Lambda;
+package com.Examples.java8Features.Lambda;
 
 public class FirstLambda {
     public static void main(String[] args) {

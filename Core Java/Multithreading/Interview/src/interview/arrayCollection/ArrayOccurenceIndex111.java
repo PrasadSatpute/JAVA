@@ -30,21 +30,21 @@ public class ArrayOccurenceIndex111 {
         list1.forEach(System.out::print);
         
         //Convert a Stream to List
-        List<Integer> list2 = list1.collect(Collectors.toList());
-        
-        int min = 0;
-        try {
-            min = Collections.min(list2);
-            
-        } catch (Exception e) {
-            System.out.println("Min Element = "+min);
-            for (int i = 0; i < arr.length; i++) {
-                if (min == arr[i]) {
-                    System.out.println("Min Element Index = "+i);
-                    break;
-                }
-            }
-        }
+//        List<Integer> list2 = list1.collect(Collectors.toList());
+//        
+//        int min = 0;
+//        try {
+//            min = Collections.min(list2);
+//            
+//        } catch (Exception e) {
+//            System.out.println("Min Element = "+min);
+//            for (int i = 0; i < arr.length; i++) {
+//                if (min == arr[i]) {
+//                    System.out.println("Min Element Index = "+i);
+//                    break;
+//                }
+//            }
+//        }
         
         list.stream()
         .filter(i -> Collections.frequency(list, i) > 1 && Collections.min(list) < i) 

@@ -1,5 +1,5 @@
 
-package com.Examples.Lambda;
+package com.Examples.java8Features.Lambda;
 
 public interface SumInterface {
     public abstract int sum(int a, int b);

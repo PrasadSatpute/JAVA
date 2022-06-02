@@ -132,21 +132,55 @@ package com.Examples;
 //-----------------------------------------------------------------------
 
 
+//public class AnonymousInnerClass {
+//    public static void main(String[] args) {
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                System.out.println("Anonymous Class with Thread");
+//            }
+//        }).start();
+//        
+//        new Thread() {
+//         public void run() {
+//            for (int i=1; i <= 5; i++) {
+//               System.out.println("Anonymous class method: " + i);
+//            }
+//         }
+//      }.start();
+//    }
+//}
+
+//  --------------------------------------------------------
+
+class Employee{
+    void PrintDesgn(String name,String desig){
+        System.out.println("Name : "+name+" Designation "+desig);
+    }
+}
+
 public class AnonymousInnerClass {
+
     public static void main(String[] args) {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("Anonymous Class with Thread");
-            }
-        }).start();
         
-        new Thread() {
-         public void run() {
-            for (int i=1; i <= 5; i++) {
-               System.out.println("Anonymous class method: " + i);
+        Employee prasad = new Employee();
+        prasad.PrintDesgn("Prasad","Associate Consultant");
+        
+        Employee mahesh = new Employee();
+        mahesh.PrintDesgn("Mahesh","Associate Consultant");
+        
+        Employee ishan = new Employee();
+        ishan.PrintDesgn("Ishan","Associate Consultant");
+        
+        Employee Ramesh = new Employee(){
+            @Override
+            void PrintDesgn(String name,String desig) {
+                System.out.println("----------------------------------------------");
+                System.out.println("Manager of All above Employees");
+                System.out.println("Name : "+name+" Designation "+desig);
+                System.out.println("----------------------------------------------");
             }
-         }
-      }.start();
+        };
+        Ramesh.PrintDesgn("Ramesh","Java Architect");
     }
 }
