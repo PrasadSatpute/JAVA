@@ -1,0 +1,40 @@
+[INFO ] 2022-05-26 16:21:38.356 [main] LoggingApplication - Starting LoggingApplication using Java 11.0.11 on ALIENWARE with PID 24452 (C:\Users\Ravi\Downloads\logging\logging\target\classes started by Ravi in C:\Users\Ravi\Downloads\logging\logging)
+[DEBUG] 2022-05-26 16:21:38.359 [main] LoggingApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+[INFO ] 2022-05-26 16:21:38.360 [main] LoggingApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-26 16:22:13.093 [main] LoggingApplication - Starting LoggingApplication using Java 11.0.11 on ALIENWARE with PID 10956 (C:\Users\Ravi\Downloads\logging\logging\target\classes started by Ravi in C:\Users\Ravi\Downloads\logging\logging)
+[DEBUG] 2022-05-26 16:22:13.101 [main] LoggingApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+[INFO ] 2022-05-26 16:22:13.102 [main] LoggingApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-26 16:22:14.361 [main] LoggingApplication - Started LoggingApplication in 1.591 seconds (JVM running for 2.483)
+[DEBUG] 2022-05-26 16:22:14.365 [main] LoggingApplication - this is debug msg
+[INFO ] 2022-05-26 16:22:14.365 [main] LoggingApplication - this is info msg
+[WARN ] 2022-05-26 16:22:14.365 [main] LoggingApplication - this is warn msg
+[ERROR] 2022-05-26 16:22:14.365 [main] LoggingApplication - this is error msg
+[FATAL] 2022-05-26 16:22:14.365 [main] LoggingApplication - this is fatal msg
+[INFO ] 2022-05-26 16:22:54.951 [main] LoggingApplication - Starting LoggingApplication using Java 11.0.11 on ALIENWARE with PID 20776 (C:\Users\Ravi\Downloads\logging\logging\target\classes started by Ravi in C:\Users\Ravi\Downloads\logging\logging)
+[DEBUG] 2022-05-26 16:22:54.957 [main] LoggingApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+[INFO ] 2022-05-26 16:22:54.959 [main] LoggingApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-26 16:22:56.304 [main] LoggingApplication - Started LoggingApplication in 1.735 seconds (JVM running for 2.811)
+[DEBUG] 2022-05-26 16:22:56.308 [main] LoggingApplication - this is debug msg
+[INFO ] 2022-05-26 16:22:56.308 [main] LoggingApplication - this is info msg
+[WARN ] 2022-05-26 16:22:56.308 [main] LoggingApplication - this is warn msg
+[ERROR] 2022-05-26 16:22:56.308 [main] LoggingApplication - this is error msg
+[FATAL] 2022-05-26 16:22:56.308 [main] LoggingApplication - this is fatal msg
+[INFO ] 2022-05-26 16:23:17.959 [main] LoggingApplication - Starting LoggingApplication using Java 11.0.11 on ALIENWARE with PID 12936 (C:\Users\Ravi\Downloads\logging\logging\target\classes started by Ravi in C:\Users\Ravi\Downloads\logging\logging)
+[DEBUG] 2022-05-26 16:23:17.965 [main] LoggingApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+[INFO ] 2022-05-26 16:23:17.967 [main] LoggingApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2022-05-26 16:23:19.127 [main] LoggingApplication - Started LoggingApplication in 1.49 seconds (JVM running for 2.462)
+[DEBUG] 2022-05-26 16:23:19.129 [main] LoggingApplication - this is debug msg
+[INFO ] 2022-05-26 16:23:19.129 [main] LoggingApplication - this is info msg
+[WARN ] 2022-05-26 16:23:19.129 [main] LoggingApplication - this is warn msg
+[ERROR] 2022-05-26 16:23:19.129 [main] LoggingApplication - this is error msg
+[FATAL] 2022-05-26 16:23:19.129 [main] LoggingApplication - this is fatal msg
+[DEBUG] 2022-05-26 16:24:06.125 [main] LoggingApplication - this is debug msg
+[INFO ] 2022-05-26 16:24:06.126 [main] LoggingApplication - this is info msg
+[WARN ] 2022-05-26 16:24:06.126 [main] LoggingApplication - this is warn msg
+[ERROR] 2022-05-26 16:24:06.126 [main] LoggingApplication - this is error msg
+[FATAL] 2022-05-26 16:24:06.126 [main] LoggingApplication - this is fatal msg
+[DEBUG] 2022-05-26 16:24:55.682 [main] LoggingApplication - this is debug msg
+[INFO ] 2022-05-26 16:24:55.682 [main] LoggingApplication - this is info msg
+[WARN ] 2022-05-26 16:24:55.682 [main] LoggingApplication - this is warn msg
+[ERROR] 2022-05-26 16:24:55.682 [main] LoggingApplication - this is error msg
+[FATAL] 2022-05-26 16:24:55.682 [main] LoggingApplication - this is fatal msg

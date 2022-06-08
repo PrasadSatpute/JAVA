@@ -51,6 +51,9 @@ public class ArrayListConcept {
             System.out.println(ar.get(i));
         }
         
+        Iterator iii = ar.iterator();
+        System.out.println("--------------------------------"+iii.next());
+        
         // non generic vs generic:
         
         ArrayList<Integer> ar1 = new ArrayList<>();  //!!! Generic type !!!
