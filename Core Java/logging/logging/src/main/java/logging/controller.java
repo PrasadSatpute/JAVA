@@ -11,10 +11,10 @@ public class controller {
 	
 	static Logger logger = LogManager.getLogger(LoggingApplication.class);
 	
-	@GetMapping("/")
+	@GetMapping("/test")
 	public String test() {
 		
-		logger.info("controller executing");
+		logger.warn("controller executing");
 		return "hello logger";
 	}
 

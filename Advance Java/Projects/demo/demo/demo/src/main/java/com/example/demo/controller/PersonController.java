@@ -3,6 +3,8 @@ package com.example.demo.controller;
 import java.util.List;
 import java.util.Optional;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,20 +14,30 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.DemoApplication;
 import com.example.demo.beans.Person;
 import com.example.demo.service.PersonService;
 
 @RestController
 @RequestMapping("/person")
 public class PersonController {
-
+	
+	static Logger logger = LogManager.getLogger(DemoApplication.class);
+	
 	@Autowired
 	PersonService pservice;
 
 	@GetMapping("/getAllPerson")
 	public List<Person> getAllPerson() {
+		logger.info("Logger Info Controller");
 		List<Person> plist = pservice.getAllPerson();
 		return plist;
+	}
+	
+	@GetMapping("/getLogger")
+	public String getLogger() {
+		logger.info("Logger Info Controller");
+		return "Hello Logger Controller";
 	}
 
 	@GetMapping("/getById/{pid}")
