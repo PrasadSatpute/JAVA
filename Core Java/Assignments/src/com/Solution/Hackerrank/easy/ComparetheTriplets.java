@@ -20,6 +20,7 @@ public class ComparetheTriplets {
             if(a.get(i) < b.get(i)){
                 countB++;
             }
+            
         }
         result.add(countA);
         result.add(countB);

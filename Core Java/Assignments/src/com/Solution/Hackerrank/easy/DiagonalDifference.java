@@ -21,6 +21,7 @@ public class DiagonalDifference {
             secondDiagonal = secondDiagonal + (arr.get(i).get(size++));
         }
         
+        
         System.out.println(firstDiagonal);
         System.out.println(secondDiagonal);
         
@@ -46,6 +47,7 @@ public class DiagonalDifference {
                 arr.get(i).add(j, sc.nextInt());
             }
         }
+        
         
         int result = diagonalDifference(arr,rowcolumn);
         System.out.println(result);

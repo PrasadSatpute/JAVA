@@ -23,6 +23,7 @@ public class BirthdayCakeCandles {
                 count++;
             }
         }
+        
         return count;
     }
     public static void main(String[] args) throws IOException {

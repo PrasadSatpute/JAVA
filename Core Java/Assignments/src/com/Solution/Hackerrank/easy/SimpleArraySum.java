@@ -19,6 +19,7 @@ public class SimpleArraySum {
         return sum;
     }
     
+    
     public static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         int lengthOfArray = sc.nextInt();
@@ -26,6 +27,8 @@ public class SimpleArraySum {
         for (int i = 0; i < lengthOfArray; i++) {
             ar.add(sc.nextInt());
         }
+
+        
         
         System.out.println(simpleArraySum(ar));
         

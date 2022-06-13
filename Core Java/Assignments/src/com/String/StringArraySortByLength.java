@@ -14,6 +14,7 @@ public class StringArraySortByLength {
         int j = i - 1;
         
         
+        
         while (j >= 0 && temp.length() < s[j].length())
         {
             s[j+1] = s[j];
