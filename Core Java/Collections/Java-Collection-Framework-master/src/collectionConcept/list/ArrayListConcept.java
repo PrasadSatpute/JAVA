@@ -24,7 +24,7 @@ public class ArrayListConcept {
         // dynamic array --> ArrayList
         //size is not fixed
         //store the values based of indexes
-        //1. it ca contain duplicate values/elements
+        //1. it can contain duplicate values/elements
         //2. maintains insertion order
         //3. it is not Synchronized, its mean it is not thread safe---> that is
         //  why is ArrayList slow in ordering with other collections
