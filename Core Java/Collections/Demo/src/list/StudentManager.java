@@ -38,6 +38,9 @@ public class StudentManager {
 		System.out.println("List after adding the elements");
 		System.out.println(listOfStudents);  
 		
+//		List after adding the elements
+//		[Sumeet, Akshay, Mahesh, Anshuman, Ishan]
+		
 		//add another list
 		ArrayList<String> listOfStudentsToBeAdded=new ArrayList<String>();
 		listOfStudentsToBeAdded.add("Prasad");
@@ -47,6 +50,9 @@ public class StudentManager {
 		System.out.println("--------------------------------------------------");
 		System.out.println("List after adding compelete list to another list");
 		System.out.println(listOfStudents);
+		
+//		List after adding compelete list to another list
+//		[Sumeet, Akshay, Mahesh, Anshuman, Ishan, Prasad, ravi]
 		 
 		 
 		//Updating the list
@@ -55,12 +61,17 @@ public class StudentManager {
 		System.out.println("List after updating the elements");
 		System.out.println(listOfStudents);
 		
+//		List after updating the elements
+//		[Sumeet, Kuldeep, Mahesh, Anshuman, Ishan, Prasad, ravi]
 		
 		 //Retrieving an element
 		 
 		 System.out.println("--------------------------------------------------");
 		 System.out.println("Retrieving an element from the list");	
 		 System.out.println(listOfStudents.get(2));
+		 
+//		 Retrieving an element from the list
+//		 Mahesh
 		 
 		 
 		//Remove element from the list
@@ -71,18 +82,27 @@ public class StudentManager {
 		System.out.println("--------------------------------------------------");
 		System.out.println("List after removing the elements");
 		System.out.println(listOfStudents);  
+		
+//		List after removing the elements
+//		[Kuldeep, Anshuman, Ishan, Prasad, ravi]
 			
 		//Clearing the list
 		listOfStudents.clear();
 		System.out.println("--------------------------------------------------");
 		System.out.println("List after clearing the elements");
 		System.out.println(listOfStudents);
+		
+//		List after clearing the elements
+//		[]
 			 
 	   //Check element is present or not
 		
 		System.out.println("--------------------------------------------------");
 		System.out.println("Check element is present or not");
 		System.out.println(listOfStudents.contains("Ramesh"));
+		
+//		Check element is present or not
+//		false
 		 
 			 
 			

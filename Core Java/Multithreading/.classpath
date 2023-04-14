@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Cocurrency/src"/>
+	<classpathentry kind="src" path="Interview/src"/>
+	<classpathentry kind="src" path="Log4JDemoProject/src/main/java"/>
+	<classpathentry kind="src" path="Log4JDemoProject/src/test/java"/>
+	<classpathentry kind="src" path="Multithread3/src"/>
+	<classpathentry kind="src" path="SLF4jSpringBootDemo/src/main/java"/>
+	<classpathentry kind="src" path="SLF4jSpringBootDemo/src/test/java"/>
+	<classpathentry kind="src" path="Synchronization/src"/>
+	<classpathentry kind="lib" path="Log4JDemoProject/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="SLF4jSpringBootDemo/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="output" path="Cocurrency/bin"/>
+</classpath>
