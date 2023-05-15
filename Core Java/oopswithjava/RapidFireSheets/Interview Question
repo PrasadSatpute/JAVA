@@ -1,0 +1,103 @@
+1) How does Java achieve platform independence?
+    ->  Using Java Compiler Java Code will compile into .class files or bytecode files
+        and after that JVM will converted this .class file into machine language code thats Why Java is Platform Independant.
+
+2) What is ClassLoader in Java?
+    ->  ClassLoader is subsystem of JVM thats load the class file when we run java Progarms
+        When we run java Progarms its loads the ClassLoader
+
+3) Write a Java program to check if a number is Even or Odd? 
+
+4) Difference between ArrayList and HashSet in Java?
+
+5) What is double checked locking in Singleton? 
+
+6) How do you create thread-safe Singleton in Java? 
+
+7) When to use the volatile variable in Java? 
+
+8) When to use a transient variable in Java? 
+
+9) Difference between the transient and volatile variable in Java? 
+
+10) Difference between Serializable and Externalizable in Java? 
+
+11) Can we override the private method in Java? 
+
+12) Difference between Hashtable and HashMap in Java? 
+
+13) Difference between Listand Set in Java? 
+
+14) Difference between ArrayList and Vector in Java 
+
+15) Difference between Hashtable and ConcurrentHashMap in Java? 
+
+16) How does ConcurrentHashMap achieve scalability? 
+
+17) Which two methods you will override for an Object to be used as Key in HashMap? 
+
+18) Difference between wait and sleep in Java? 
+
+19) Difference between notify and notifyAll in Java? 
+
+20) Why you override hashcode, along with equals() in Java? 
+
+21) What is the load factor of HashMap means? 
+
+22) Difference between ArrayList and LinkedList in Java? 
+
+23) Difference between CountDownLatch and CyclicBarrier in Java? 
+
+24) When do you use Runnable vs Thread in Java? 
+
+25) What is the meaning of Enum being type-safe in Java? 
+
+26) How does Autoboxing of Integer work in Java? 
+
+27) Difference between PATH and Classpath in Java? 
+
+28) Difference between method overloading and overriding in Java? 
+
+29) How do you prevent a class from being sub-classed in Java? 
+
+30) How do you restrict your class from being used by your client? 
+
+31) Difference between StringBuilder and StringBuffer in Java? 
+
+32) Difference between Polymorphism and Inheritance in Java? 
+
+33) Can we override static method in Java? 
+
+34) Can we access the private method in Java? 
+
+35) Difference between interface and abstract class in Java? 
+
+36) Difference between DOM and SAX parser in Java? 
+
+37) Difference between throw and throws keyword in Java? 
+
+38) Difference between fail-safe and fail-fast iterators in Java? 
+
+39) Difference between Iterator and Enumeration in Java? 
+
+40) What is IdentityHashMap in Java? 
+
+41) What is the String pool in Java? 
+
+42) Can a Serializable class contains a non-serializable field in Java? 
+
+43) Difference between this and super in Java? 
+
+44) Difference between Comparator and Comparable in Java? 
+
+45) Difference between java.util.Date and java.sql.Date in Java? 
+
+46) Why wait and notify method are declared in Object class in Java? 
+
+47) Why Java doesn’t support multiple inheritances? 
+
+48) Difference between checked and unchecked Exception in Java? 
+
+49) Difference between Error and Exception in Java? 
+
+50) Difference between Race condition and Deadlock in Java?

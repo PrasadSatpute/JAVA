@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;Assignment1/src/org.dac.test&apos;&#x0D;&#x0A;- Original project: &apos;Day01&apos;&#x0D;&#x0A;- Destination element: &apos;Assignment1/src/org.dac.test&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     org.dac.test.Program2.java&#x0D;&#x0A;     org.dac.test.Program1.java" description="Copy compilation units" destination="=Assignment1/src&lt;org.dac.test" element1="/src&lt;org.dac.test{Program2.java" element2="/src&lt;org.dac.test{Program1.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1622031863167" units="2" version="1.0"/>
+</session>
