@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Avengers
+ *
+ */
+module JavaPractice {
+}
