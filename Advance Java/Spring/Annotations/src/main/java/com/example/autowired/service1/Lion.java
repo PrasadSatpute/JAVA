@@ -1,11 +1,11 @@
-package com.example.demo.service1;
+package com.example.autowired.service1;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.service.Animal;
+import com.example.autowired.service.Animal;
 
-@Primary
+@Primary  // 2nd step
 @Service
 public class Lion implements Animal{
 
