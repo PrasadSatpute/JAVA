@@ -32,6 +32,17 @@ interface myChildInterface extends myInterface{
         System.out.println("Static method in Parent Class");
     }
 }
+class myNormalClass
+{
+    static void printAny()
+    {
+        System.out.println("Hi from Normal Class and Not Override in any class");
+    }
+}
+class myNormalChildClass extends myNormalClass
+{
+    
+}
 public class App 
 {
     public static void main( String[] args )
@@ -48,5 +59,8 @@ public class App
         };
         anInterface.getID();
         anInterface.printDefault();
+
+        myNormalClass.printAny();       // we can call static method from using class name
+        myNormalChildClass.printAny();
     }
 }
