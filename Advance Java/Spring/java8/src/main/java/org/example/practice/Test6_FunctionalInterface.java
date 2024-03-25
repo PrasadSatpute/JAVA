@@ -1,7 +1,8 @@
 package org.example.practice;
 
 //Implement a custom functional interface and use it with a lambda expression.
-public class Test6 {
+public class Test6_FunctionalInterface {
+    @FunctionalInterface
     interface CustomInterface
     {
         void function(String s);

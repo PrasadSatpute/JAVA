@@ -1,7 +1,7 @@
 package org.example.practice;
 
 //Implement a functional interface to calculate the sum of two numbers.
-public class Test2 {
+public class Test2_Sum_FunctionalInterface {
     interface Sum
     {
         void add(int a,int b);

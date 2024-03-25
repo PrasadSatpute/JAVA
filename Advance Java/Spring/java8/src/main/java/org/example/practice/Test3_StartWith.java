@@ -2,10 +2,10 @@ package org.example.practice;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-//Convert a list of strings to uppercase using streams and method references.
-public class Test4 {
+//Use the Stream API to filter a list of strings starting with the letter "A".
+public class Test3_StartWith {
     public static void main(String[] args) {
         List<String> name = Arrays.asList("Abcd","Hjh","anbt","dhv","aa","A");
-        name.stream().map(String::toUpperCase).collect(Collectors.toList()).forEach(System.out::println);
+        System.out.println(name.stream().filter(s -> s.toLowerCase().startsWith("a")).collect(Collectors.toList()));
     }
 }
